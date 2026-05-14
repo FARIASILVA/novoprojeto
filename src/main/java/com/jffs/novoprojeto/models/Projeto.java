@@ -32,13 +32,23 @@ private BigDecimal preco;
 private int quantidade;
 
 @Column(name ="setor")
-private int setor;
+private String setor;
 
 
 @Column(name ="categoria")
 private String categoria;
 
+@Column(name ="andar")
+private int  andar;
 
+
+public int getAndar() {
+    return andar;
+}
+
+public void setAndar(int andar) {
+    this.andar = andar;
+}
 
 public String getCategoria() {
     return categoria;
@@ -48,11 +58,11 @@ public void setCategoria(String categoria) {
     this.categoria = categoria;
 }
 
-public int getSetor() {
+public String getSetor() {
     return setor;
 }
 
-public void setSetor(int setor) {
+public void setSetor(String setor) {
     this.setor = setor;
 }
 
