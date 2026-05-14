@@ -38,7 +38,17 @@ private String setor;
 @Column(name ="categoria")
 private String categoria;
 
+@Column(name ="andar")
+private int  andar;
 
+
+public int getAndar() {
+    return andar;
+}
+
+public void setAndar(int andar) {
+    this.andar = andar;
+}
 
 public String getCategoria() {
     return categoria;
