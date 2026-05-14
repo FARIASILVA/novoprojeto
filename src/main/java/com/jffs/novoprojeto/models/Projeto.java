@@ -11,12 +11,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name= "produto")
-public class Produto implements Serializable {
+@Table(name = "projeto")
+public class Projeto implements Serializable{
     
-
-
-
 
 
 @Id@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -28,13 +25,36 @@ private String nome;
 @Column(name="descricao")
 private String descricao;
 
-
-
 @Column(name = "preco")
 private BigDecimal preco;
 
 @Column(name ="quantidade")
 private int quantidade;
+
+@Column(name ="setor")
+private int setor;
+
+
+@Column(name ="categoria")
+private String categoria;
+
+
+
+public String getCategoria() {
+    return categoria;
+}
+
+public void setCategoria(String categoria) {
+    this.categoria = categoria;
+}
+
+public int getSetor() {
+    return setor;
+}
+
+public void setSetor(int setor) {
+    this.setor = setor;
+}
 
 public long getId() {
 return id;
