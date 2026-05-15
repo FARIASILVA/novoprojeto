@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import io.github.cdimascio.dotenv.Dotenv;
 
 @SpringBootApplication
-public class NovoprojetoApplication {
+public class NovoprojetoApplicationNovo {
 
     public static void main(String[] args) {
 
@@ -16,6 +16,6 @@ public class NovoprojetoApplication {
         System.setProperty("DB_USER", dotenv.get("DB_USER"));
         System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
 
-        SpringApplication.run(NovoprojetoApplication.class, args);
+        SpringApplication.run(NovoprojetoApplicationNovo.class, args);
     }
 }
