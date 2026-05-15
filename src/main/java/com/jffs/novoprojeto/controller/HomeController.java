@@ -9,6 +9,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "Aplicação rodando com sucesso novamente!";
+        return "Aplicação rodando com sucesso!";
     }
 }
