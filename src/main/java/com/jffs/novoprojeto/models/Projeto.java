@@ -41,6 +41,8 @@ private String categoria;
 @Column(name ="andar")
 private int  andar;
 
+@Column(name ="desconto")
+private BigDecimal  desconto;
 
 public int getAndar() {
     return andar;
@@ -104,4 +106,12 @@ public String getDescricao() {
 public void setDescricao(String descricao) {
     this.descricao = descricao;
 }
+
+    public BigDecimal getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(BigDecimal desconto) {
+        this.desconto = desconto;
+    }
 }
